@@ -1,5 +1,5 @@
 runtime "ruby"
-exec "jobs_updater_worker.rb"
+exec "jobs_worker.rb"
 
 gemfile 'Gemfile'
 
