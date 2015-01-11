@@ -12,9 +12,9 @@ puts "Worker started!"
 puts "My task_id is #{@iron_task_id}"
 puts "Parameters: '#{params}'"
 
-saved_jobs = HTTParty.get api_url("offers")
-saved_jobs.each do |offer|
-  jobs_url = api_url("offers/#{offer['id']}")
+saved_jobs = HTTParty.get api_url("jobs")
+saved_jobs.each do |job|
+  jobs_url = api_url("jobs/#{job['id']}")
   results = HTTParty.get jobs_url
-  puts "Updated: #{offer['id']}"
+  puts "Updated: #{job['id']}"
 end

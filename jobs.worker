@@ -1,4 +1,4 @@
-runtime "ruby"
+runtime "ruby", "2.1"
 exec "jobs_worker.rb"
 
 gemfile 'Gemfile'
